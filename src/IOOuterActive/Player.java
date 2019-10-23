@@ -35,12 +35,17 @@ public class Player {
         return money;
     }
 
-    public void addMoney(){
+    //Adds the value of the input to the players balance
+    public void addMoney(int money){
 
+        this.money += money;
 
     }
 
-    public void subtractMoney(){
+    //Subtracts the input from the players balance
+    public void subtractMoney(int money){
+
+        this.money -= money;
 
     }
 
