@@ -16,7 +16,14 @@ public class Player {
     public void playGame(){
 
     }
-    
+
+
+    public void setPlayerName(){
+
+
+    }
+
+
     //Returns the current balance of the players money
     public int getMoneySum(){
 
