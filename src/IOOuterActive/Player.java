@@ -6,7 +6,9 @@ public class Player {
     private String name;
     private int point;
 
+    public Player(){
 
+    }
 
     public int getMoneySum(){
 
