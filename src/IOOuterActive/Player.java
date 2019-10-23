@@ -7,7 +7,8 @@ public class Player {
     private int point;
 
     public Player(){
-
+        DiceCup diceCup = new DiceCup();
+        
     }
 
     public int getMoneySum(){
