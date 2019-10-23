@@ -11,9 +11,10 @@ public class Player {
 
     }
 
+    //Returns the current balance of the players money
     public int getMoneySum(){
 
-
+        return money;
     }
 
     public void addMoney(){
