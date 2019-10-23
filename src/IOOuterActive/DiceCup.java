@@ -2,15 +2,15 @@ package IOOuterActive;
 
 public class DiceCup {
 
-    // Variable
-    private final Dice t1;
-    private final Dice t2;
+    // Attributes
+    private final Die t1;
+    private final Die t2;
     private int outcome1, outcome2, sum;
 
     // Kontruktør. Laver to terninger.
     public DiceCup() {
-        t1 = new Dice();
-        t2 = new Dice();
+        t1 = new Die();
+        t2 = new Die();
     }
 
     // Metoder. Slår de to terninger, med metoden "roll" fra "Terning"-klassen.
@@ -46,7 +46,6 @@ public class DiceCup {
 
     // Tjekker om terningerne har slået to seksere
     public boolean checkIfDoubleSix() {
-
         return (outcome1 == 6 && outcome2 == 6);
     }
 
@@ -54,14 +53,11 @@ public class DiceCup {
         return (outcome1 == outcome2);
     }
 
-    //
-
     // Sætter værdien af udfaldende til den ønskede værdi -------------HUSK AT SLETTE
-    public void setUdfald(final int dice1, final int dice2) {
+    public void setUdfald(final int die1, final int die2) {
 
-        outcome1 = dice1;
-        outcome2 = dice2;
-
+        outcome1 = die1;
+        outcome2 = die2;
     }
 
 }
