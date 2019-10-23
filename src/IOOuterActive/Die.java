@@ -3,8 +3,8 @@ package IOOuterActive;
 public class Die {
 
     //Attributer
-    final int maxval = 6; // max value
-    int faceValue;      //current value
+    private final int maxval = 6; // max value
+    private int faceValue;       //current value
 
 
     //constructor
