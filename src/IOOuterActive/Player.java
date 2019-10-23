@@ -6,4 +6,17 @@ public class Player {
     private String name;
     private int point;
 
+
+
+    public int getMoneySum(){
+
+
+    }
+
+    public int addMoney(){
+
+
+    }
+
 }
+
