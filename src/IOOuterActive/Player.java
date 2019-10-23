@@ -7,7 +7,7 @@ public class Player {
 
     //Atributes
     private String name;
-    private int point;
+    private int money;
 
     public Player(){
         diceCup = new DiceCup();
@@ -19,7 +19,8 @@ public class Player {
 
     }
 
-    public int addMoney(){
+    public void addMoney(){
+        diceCup.getSum();
 
 
     }
