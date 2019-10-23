@@ -21,20 +21,31 @@ public class Field {
                 break;
             case 6:
                 break;
-            case 7:
+            case 7: {
+                System.out.println("Monastery");
+            }
                 break;
-            case 8:
+            case 8:{
+                System.out.println("Black cave");
+            }
                 break;
-            case 9:
+            case 9:{
+                System.out.println("Huts in the mountain");
+            }
                 break;
-            case 10:
+            case 10: {
+                System.out.println("The werewall (werewallwolf-wall)");
+            }
                 break;
-            case 11:
+            case 11: {
+                System.out.println("The pit");
+            }
                 break;
-            case 12:
+            case 12: {
+                System.out.println("Goldmine");
+            }
                 break;
         }
-        
     }
 }
 
