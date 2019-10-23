@@ -7,10 +7,14 @@ public class Player {
     private String name;
     private int money;
 
+    //Metoder
     public Player(){
 
     }
 
+    public void playGame(){
+
+    }
     //Returns the current balance of the players money
     public int getMoneySum(){
 
@@ -21,6 +25,12 @@ public class Player {
 
 
     }
+
+    public void subtractMoney(){
+
+    }
+
+
 
 }
 
