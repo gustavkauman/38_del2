@@ -2,13 +2,16 @@ package IOOuterActive;
 
 public class Player {
 
+    //Instans variabel
+    private DiceCup diceCup;
+
     //Atributes
     private String name;
     private int point;
 
     public Player(){
-        DiceCup diceCup = new DiceCup();
-        
+        diceCup = new DiceCup();
+
     }
 
     public int getMoneySum(){
