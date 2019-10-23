@@ -1,5 +1,7 @@
 package IOOuterActive;
 
+import java.util.Scanner;
+
 public class Player {
 
 
@@ -17,10 +19,13 @@ public class Player {
 
     }
 
-
+    //Sets players name via input
     public void setPlayerName(){
+        Scanner in = new Scanner(System.in);
+        System.out.print("Enter player name: ");
+        name = in.nextLine();
 
-
+        in.close();
     }
 
 
