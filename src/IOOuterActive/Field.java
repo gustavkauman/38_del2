@@ -11,15 +11,25 @@ public class Field {
 
         switch (sum){
 
-            case 2:
+            case 2:{
+                System.out.println("Tower");
+            }
                 break;
-            case 3:
+            case 3:{
+                System.out.println("Crater");
+            }
                 break;
-            case 4:
+            case 4:{
+                System.out.println("Palace gates");
+            }
                 break;
-            case 5:
+            case 5:{
+                System.out.println("Cold Desert");
+            }
                 break;
-            case 6:
+            case 6:{
+                System.out.println("Walled city");
+            }
                 break;
             case 7:
                 break;
