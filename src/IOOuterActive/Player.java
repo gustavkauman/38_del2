@@ -12,9 +12,11 @@ public class Player {
 
     }
 
+    //Skal uddybes?
     public void playGame(){
 
     }
+    
     //Returns the current balance of the players money
     public int getMoneySum(){
 
