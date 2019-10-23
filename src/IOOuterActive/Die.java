@@ -2,7 +2,7 @@ package IOOuterActive;
 
 public class Die {
 
-    //Intance var.
+    //Attributer
     final int maxval = 6; // max value
     int faceValue;      //current value
 
