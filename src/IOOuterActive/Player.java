@@ -65,59 +65,69 @@ public class Player {
         switch (sum){
 
             case 2:{
-                System.out.println("Tower");
-                System.out.println(account.addMoney(250));          //Tower  +250
+                System.out.println("<Tower>\n");
+                System.out.println(account.addMoney(250));         //Tower  +250
+                System.out.println(account.toStringBalance(account.getMoneySum()) + "\n");
             }
             break;
             case 3:{
-                System.out.println("Crater");
+                System.out.println("<Crater>\n");
                 System.out.println(account.subtractMoney(100));     //Crater   -100
+                System.out.println(account.toStringBalance(account.getMoneySum()) + "\n");
             }
             break;
             case 4:{
-                System.out.println("Palace gates");
+                System.out.println("<Palace gates>\n");
                 System.out.println(account.addMoney(100));         //Palace gates  +100
+                System.out.println(account.toStringBalance(account.getMoneySum()) + "\n");
             }
             break;
             case 5:{
-                System.out.println("Cold Desert");
+                System.out.println("<Cold Desert>\n");
                 System.out.println(account.subtractMoney(20));     //Cold Desert    -20
+                System.out.println(account.toStringBalance(account.getMoneySum()) + "\n");
             }
             break;
             case 6:{
-                System.out.println("Walled city");
+                System.out.println("<Walled city>\n");
                 System.out.println(account.addMoney(180));         //Walled city    +180
+                System.out.println(account.toStringBalance(account.getMoneySum()) + "\n");
             }
             break;
             case 7: {
-                System.out.println("Monastery");
+                System.out.println("<Monastery>\n");
                 System.out.println(account.addMoney(0));           //Monastery    0
+                System.out.println(account.toStringBalance(account.getMoneySum()) + "\n");
             }
             break;
             case 8:{
-                System.out.println("Black cave");
+                System.out.println("<Black cave>\n");
                 System.out.println(account.subtractMoney(70));    //Black cave    -70
+                System.out.println(account.toStringBalance(account.getMoneySum()) + "\n");
             }
             break;
             case 9:{
-                System.out.println("Huts in the mountain");
+                System.out.println("<Huts in the mountain>\n");
                 System.out.println(account.addMoney(60));         // Huts in the mountain   +60
+                System.out.println(account.toStringBalance(account.getMoneySum()) + "\n");
             }
             break;
             case 10: {
-                System.out.println("The werewall (werewallwolf-wall)");
-                System.out.println(account.subtractMoney(60));               //The Werewall (werewolf-wall)        -80,
-                                                                             // men spilleren får en ekstra tur.
+                System.out.println("<The Werewall> (Werewallwolf-wall)\n");     //The Werewall (werewolf-wall  -80,
+                System.out.println(account.subtractMoney(60));                  // men spilleren får en ekstra tur.
+                System.out.println(account.toStringBalance(account.getMoneySum()) + "\n");
             }
             break;
             case 11: {
-                System.out.println("The pit");
+                System.out.println("<The pit>\n");
                 System.out.println(account.subtractMoney(50));     //The pit    -50
+                System.out.println(account.toStringBalance(account.getMoneySum()) + "\n");
             }
             break;
             case 12: {
-                System.out.println("Goldmine");
+                System.out.println("<Goldmine>\n");
                 System.out.println(account.addMoney(650));        //Goldmine     +650
+                System.out.println(account.toStringBalance(account.getMoneySum()) + "\n");
             }
             break;
         }
