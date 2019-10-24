@@ -40,4 +40,10 @@ public class Account {
         return "Transaktionen er gennemført. Der er hævet " + money + "$ fra din konto";
     }
 
+    //Returns a string with a message about the account balance
+    public String toStringBalance(){
+
+        return "Nuværende saldo: ";
+    }
+
 }
