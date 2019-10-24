@@ -1,11 +1,7 @@
 package IOOuterActive;
 
-import java.util.Scanner;
-
 public class Player {
 
-
-    //Atributes
     private String name;
     private Account account = new Account();
 
@@ -14,11 +10,11 @@ public class Player {
 
     }
 
+
     //Skal uddybes?
     public void playGame(){
 
     }
-
 
     //Sets players name via input
     public void setPName(String input){
@@ -56,7 +52,6 @@ public class Player {
 
         return account.toStringBalance(account.getMoneySum());
     }
-
 
     // Checks the value of the input and decides which field the player has landed on
     // The corresponding amount is either added or withdrawn from the players account
@@ -132,12 +127,6 @@ public class Player {
             break;
         }
     }
-
-
-
-
-
-
 
 
 }
