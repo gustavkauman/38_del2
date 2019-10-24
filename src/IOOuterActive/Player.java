@@ -27,6 +27,18 @@ public class Player {
         System.out.println("Dit navn er nu: " + name);
     }
 
+    //Returns the players name
+    public String getPlayerName(){
+
+        return name;
+    }
+
+    //Prints a message asking the player to enter the desired name
+    public void toStringEnterName(){
+
+        System.out.println("Indtast spiller navn: ");
+    }
+
     //Sets players account balance to the value of the input
     public void setPlayerAccount(int amount){
 
