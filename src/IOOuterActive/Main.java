@@ -9,7 +9,7 @@ public class Main {
 
         Account account = new Account();
         account.setMoney(1000);
-        System.out.println();
+        System.out.println(account.toStringBalance())
 
 
 

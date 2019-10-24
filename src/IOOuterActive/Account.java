@@ -41,9 +41,9 @@ public class Account {
     }
 
     //Returns a string with a message about the account balance
-    public String toStringBalance(){
+    public String toStringBalance(int money){
 
-        return "Nuværende saldo: ";
+        return "Nuværende saldo: " + money;
     }
 
 }
