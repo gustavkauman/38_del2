@@ -13,14 +13,14 @@ public class Account {
         return money;
     }
 
-    //Adds the value of the input to the balance
+    //Adds the value of the input to the balance and returns a confirmation message
     public String addMoney(int money){
 
         this.money += money;
         return "Transaktionen er gennemført. Der er tilføjet " + money + "$ til din konto";
     }
 
-    //Subtracts the value of the input from the balance
+    //Subtracts the value of the input from the balance and returns a confirmation message
     public String subtractMoney(int money){
 
         this.money -= money;
