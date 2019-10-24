@@ -7,22 +7,20 @@ public class Account {
 
 
 
-
-
-    //Returns the current balance of the players money
+    //Returns the current balance of money
     public int getMoneySum(){
 
         return money;
     }
 
-    //Adds the value of the input to the players balance
+    //Adds the value of the input to the balance
     public void addMoney(int money){
 
         this.money += money;
 
     }
 
-    //Subtracts the input from the players balance
+    //Subtracts the value of the input from the balance
     public void subtractMoney(int money){
 
         this.money -= money;
