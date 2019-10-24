@@ -9,7 +9,11 @@ public class Main {
 
         Account account = new Account();
         account.setMoney(1000);
-        System.out.println(account.toStringBalance())
+        System.out.println(account.toStringBalance(account.getMoneySum()));
+        System.out.println(account.subtractMoney(2000));
+        System.out.println(account.toStringBalance(account.getMoneySum()));
+        System.out.println(account.addMoney(1));
+        System.out.println(account.toStringBalance(account.getMoneySum()));
 
 
 

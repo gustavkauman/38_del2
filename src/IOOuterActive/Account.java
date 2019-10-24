@@ -32,12 +32,15 @@ public class Account {
     //The method also makes sure that the balance cannot be negative.
     public String subtractMoney(int money){
 
-        if(this.money < money)
+        if(this.money < money) {
             this.money = 0;
-        else
-        this.money -= money;
-
-        return "Transaktionen er gennemført. Der er hævet " + money + "$ fra din konto";
+            return "Transaktionen er gennemført. Der er hævet " + money + "$ fra din konto, " +
+                    "men da du ikke har kassekredit, er din saldo sat til 0";
+        }
+        else {
+            this.money -= money;
+            return "Transaktionen er gennemført. Der er hævet " + money + "$ fra din konto";
+        }
     }
 
     //Returns a string with a message about the account balance
