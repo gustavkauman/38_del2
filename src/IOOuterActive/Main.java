@@ -15,6 +15,14 @@ public class Main {
         System.out.println(account.addMoney(1));
         System.out.println(account.toStringBalance(account.getMoneySum()));
 
+        Player player1 = new Player();
+        Player player2 = new Player();
+
+        player1.setPlayerName();
+
+
+
+
 
 
 
