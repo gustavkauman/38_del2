@@ -21,13 +21,10 @@ public class Player {
 
 
     //Sets players name via input
-    public void setPlayerName(){
-        Scanner in = new Scanner(System.in);
-        System.out.print("Indtast spiller navn: ");
-        name = in.nextLine();
-        System.out.println("Dit navn er nu: " + name);
+    public void setPlayerName(String input){
 
-        in.close();
+        name = input;
+        System.out.println("Dit navn er nu: " + name);
     }
 
     //Sets players account balance to the value of the input
