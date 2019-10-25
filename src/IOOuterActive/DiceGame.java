@@ -8,6 +8,14 @@ public class DiceGame {
    public DiceGame(){
        player1.setPAccount(1000);
        player2.setPAccount(1000);
+
+       while (player1.getPBalance() < 3000 || player2.getPBalance() < 3000){
+
+
+
+       }
+
+
    }
 
    
