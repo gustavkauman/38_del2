@@ -2,21 +2,29 @@ package IOOuterActive;
 
 public class Player {
 
+    //Attributes
     private String name;
     private Account account = new Account();
+    private boolean turn;
 
     public Player(){
     }
 
+    public boolean getTurn() {
+        return turn;
+    }
+
+    public void setTurn(boolean turn) {
+        this.turn = turn;
+    }
 
     //Skal uddybes?
     public void playGame(){
     }
 
-    //Sets players name via input
+    //Sets player's name via input
     public void setPName(String input){
         name = input;
-        System.out.println("Dit navn er nu: " + name +"\n");
     }
 
     //Returns the players name

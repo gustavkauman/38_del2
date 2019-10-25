@@ -17,7 +17,10 @@ public class Main {
         in.close();
 
         //kald på dice-game
-        DiceGame play = new DiceGame();
+        DiceGame diceGame = new DiceGame();
+        diceGame.initializeGame(player1, player2);
+
+        diceGame.play(player1, player2);
 
 //        player1.fieldList(4);
 //        player2.fieldList(2);

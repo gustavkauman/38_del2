@@ -5,7 +5,7 @@ public class DiceCup {
     // Attributes
     private final Die t1;
     private final Die t2;
-    private int outcome1, outcome2, sum;
+    private int outcome1, outcome2;
 
     // Kontruktør. Laver to terninger.
     public DiceCup() {
@@ -20,14 +20,10 @@ public class DiceCup {
     }
 
     //lægger de to facevalues sammen og gemmer dem som sum
-    public int sumFace() {
-        sum = outcome1 + outcome2;
-        return sum;
+    public int getSum() {
+        return outcome1 + outcome2;
     }
 
-    public int getSum() {
-        return sum;
-    }
 
     // Returnere en tekst med værdien af terningernes rul.
     public String toStringOutcome() {
