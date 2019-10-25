@@ -5,27 +5,22 @@ public class Player {
     private String name;
     private Account account = new Account();
 
-
     public Player(){
-
     }
 
 
     //Skal uddybes?
     public void playGame(){
-
     }
 
     //Sets players name via input
     public void setPName(String input){
-
         name = input;
         System.out.println("Dit navn er nu: " + name +"\n");
     }
 
     //Returns the players name
     public String getPName(){
-
         return name;
     }
 
@@ -37,7 +32,6 @@ public class Player {
 
     //Sets players account balance to the value of the input
     public void setPAccount(int amount){
-
         account.setMoney(amount);
     }
 

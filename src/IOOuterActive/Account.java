@@ -11,19 +11,16 @@ public class Account {
 
     //Returns the current balance of money
     public int getMoneySum(){
-
         return money;
     }
 
     //Sets the balance to the value of the input
     public void setMoney(int amount){
-
         this.money = amount;
     }
 
     //Adds the value of the input to the balance and returns a confirmation message
     public String addMoney(int money){
-
         this.money += money;
         return "Transaktionen er gennemført. Der er tilføjet " + money + "$ til din konto";
     }
