@@ -125,7 +125,7 @@ public class Player {
             }
             case 12: {
                 System.out.println("<Goldmine>");
-                System.out.println("Jackpot! Du gik en tur på casino og trak i den enarmede, snup en bajer til din videre færd");
+                System.out.println("Jackpot! 650 guldklumper! Du gik en tur på casino og trak i den enarmede, snup en bajer til din videre færd");
                 System.out.println(account.addMoney(650));        //Goldmine     +650
                 System.out.println(account.toStringBalance(account.getMoneySum()) + "\n");
                 break;
