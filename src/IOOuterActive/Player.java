@@ -54,31 +54,36 @@ public class Player {
         switch (sum){
 
             case 2:{
-                System.out.println("<Tower>\n");
+                System.out.println("<Tower>");
+                System.out.println("Du klatre op til toppen af tårnet og finder en død rotte samt en skat til en værdi af 250");
                 System.out.println(account.addMoney(250));         //Tower  +250
                 System.out.println(account.toStringBalance(account.getMoneySum()) + "\n");
                 break;
             }
             case 3:{
-                System.out.println("<Crater>\n");
+                System.out.println("<Crater>");
+                System.out.println("Dit eksperiment har efterladt dig med en forkullet frisure, betal en frisør regning på 100");
                 System.out.println(account.subtractMoney(100));     //Crater   -100
                 System.out.println(account.toStringBalance(account.getMoneySum()) + "\n");
                 break;
             }
             case 4:{
-                System.out.println("<Palace gates>\n");
+                System.out.println("<Palace gates>");
+                System.out.println("Du hjælper med at forsvarer slotsporten og får 100 i bonus");
                 System.out.println(account.addMoney(100));         //Palace gates  +100
                 System.out.println(account.toStringBalance(account.getMoneySum()) + "\n");
                 break;
             }
             case 5:{
-                System.out.println("<Cold Desert>\n");
+                System.out.println("<Cold Desert>");
+                System.out.println("Du er faret vild i en ørken og betaler 20 for en vej ud");
                 System.out.println(account.subtractMoney(20));     //Cold Desert    -20
                 System.out.println(account.toStringBalance(account.getMoneySum()) + "\n");
                 break;
             }
             case 6:{
-                System.out.println("<Walled city>\n");
+                System.out.println("<Walled city>");
+                System.out.println("Du har hjulpet med at bygge bymuren og har tjent 180");
                 System.out.println(account.addMoney(180));         //Walled city    +180
                 System.out.println(account.toStringBalance(account.getMoneySum()) + "\n");
                 break;
