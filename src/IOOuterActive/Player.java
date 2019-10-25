@@ -84,37 +84,43 @@ public class Player {
                 break;
             }
             case 7: {
-                System.out.println("<Monastery>\n");
+                System.out.println("<Monastery>");
+                System.out.println("Klosteret tilbyder gratis ly for natten");
                 System.out.println(account.addMoney(0));           //Monastery    0
                 System.out.println(account.toStringBalance(account.getMoneySum()) + "\n");
                 break;
             }
             case 8:{
-                System.out.println("<Black cave>\n");
+                System.out.println("<Black cave>");
+                System.out.println("Du snubler over en rotte og taber 70 guldklumper")
                 System.out.println(account.subtractMoney(70));    //Black cave    -70
                 System.out.println(account.toStringBalance(account.getMoneySum()) + "\n");
                 break;
             }
             case 9:{
-                System.out.println("<Huts in the mountain>\n");
+                System.out.println("<Huts in the mountain>");
+                System.out.println("Der ligger en person og sover foran sin hytte og du har lange fingre. Put 60 guldklumper i lommen");
                 System.out.println(account.addMoney(60));         // Huts in the mountain   +60
                 System.out.println(account.toStringBalance(account.getMoneySum()) + "\n");
                 break;
             }
             case 10: {
-                System.out.println("<The Werewall> (Werewallwolf-wall)\n");     //The Werewall (werewolf-wall  -80,
+                System.out.println("<The Werewall> (Werewallwolf-wall)");
+                System.out.println("Tro det eller ej, en mur lavet af varulve! Du mister en arm og 80 guldklumper, men tag en tur til"); //The Werewall (werewolf-wall  -80,
                 System.out.println(account.subtractMoney(60));                  // men spilleren får en ekstra tur.
                 System.out.println(account.toStringBalance(account.getMoneySum()) + "\n");
                 break;
             }
             case 11: {
-                System.out.println("<The pit>\n");
+                System.out.println("<The pit>");
+                System.out.println("Du knækker en tand på kernen i en lækker fersken, tag til tandlægen for 50 guldklumper");
                 System.out.println(account.subtractMoney(50));     //The pit    -50
                 System.out.println(account.toStringBalance(account.getMoneySum()) + "\n");
                 break;
             }
             case 12: {
-                System.out.println("<Goldmine>\n");
+                System.out.println("<Goldmine>");
+                System.out.println("Jackpot! Du gik en tur på casino og trak i den enarmede, snup en bajer til din videre færd");
                 System.out.println(account.addMoney(650));        //Goldmine     +650
                 System.out.println(account.toStringBalance(account.getMoneySum()) + "\n");
                 break;

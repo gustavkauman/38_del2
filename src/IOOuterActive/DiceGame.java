@@ -46,6 +46,7 @@ public class DiceGame {
            //2)  Resolve result of dice and affect the points on the account
            System.out.println("Du er landet på nummer " + rollVal + " som er:" );
            player3.fieldList(rollVal);
+           // player3.toString(RollVal);
 
            //3) after round, players swap and checks for extra turn
            if (turn == true && rollVal != 10){
@@ -57,7 +58,7 @@ public class DiceGame {
 
            //5) Her er en tillykkemeddelelse
            if(player3.getPBalance()>3000){
-               System.out.println("Tillyke "+ pname +" du har vundet :-)");
+               System.out.println("Tillykke "+ pname +" du har vundet :-)");
            }
 
        }
