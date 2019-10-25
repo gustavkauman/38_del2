@@ -97,7 +97,7 @@ public class Player {
             }
             case 8:{
                 System.out.println("<Black cave>");
-                System.out.println("Du snubler over en rotte og taber 70 guldklumper")
+                System.out.println("Du snubler over en rotte og taber 70 guldklumper");
                 System.out.println(account.subtractMoney(70));    //Black cave    -70
                 System.out.println(account.toStringBalance(account.getMoneySum()) + "\n");
                 break;
