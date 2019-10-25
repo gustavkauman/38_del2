@@ -16,14 +16,17 @@ public class Main {
 
         in.close();
 
-        player1.fieldList(4);
-        player2.fieldList(2);
-        player1.fieldList(6);
-        player2.fieldList(5);
-        player1.fieldList(8);
-        player2.fieldList(12);
-        player1.fieldList(10);
-        player2.fieldList(9);
+        //kald på dice-game
+        DiceGame play = new DiceGame();
+
+//        player1.fieldList(4);
+//        player2.fieldList(2);
+//        player1.fieldList(6);
+//        player2.fieldList(5);
+//        player1.fieldList(8);
+//        player2.fieldList(12);
+//        player1.fieldList(10);
+//        player2.fieldList(9);
 
 
 
