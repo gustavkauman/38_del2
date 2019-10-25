@@ -56,7 +56,7 @@ public class DiceGame {
                turn = true;
            }
 
-           //5) Her er en tillykkemeddelelse
+           //4) Her er en tillykkemeddelelse
            if(player3.getPBalance()>3000){
                System.out.println("Tillykke "+ pname +" du har vundet :-)");
            }
