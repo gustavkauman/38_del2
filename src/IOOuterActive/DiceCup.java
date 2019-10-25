@@ -34,24 +34,25 @@ public class DiceCup {
         return "Terning 1: " + outcome1 + "\n" + "Terning 2: " + outcome2 + "\n";
     }
 
-    // Tjekker om der er slået to ens værdier. Returnere boolean.
-    public boolean checkIfEqualNotOneSix() {
-        return (outcome1 == outcome2 && outcome1 != 1 && outcome1 != 6);
-    }
-
-    //Tjekker om terningerne har slået to ettere. Returnere boolean.
-    public boolean checkIfDoubleOne() {
-        return (outcome1 == 1 && outcome2 == 1);
-    }
-
-    // Tjekker om terningerne har slået to seksere
-    public boolean checkIfDoubleSix() {
-        return (outcome1 == 6 && outcome2 == 6);
-    }
-
-    public boolean checkIfEqual() {
-        return (outcome1 == outcome2);
-    }
+/////////////////// Bruges ikke i dette projekt/////////////////////
+//    // Tjekker om der er slået to ens værdier. Returnere boolean.
+//    public boolean checkIfEqualNotOneSix() {
+//        return (outcome1 == outcome2 && outcome1 != 1 && outcome1 != 6);
+//    }
+//
+//    //Tjekker om terningerne har slået to ettere. Returnere boolean.
+//    public boolean checkIfDoubleOne() {
+//        return (outcome1 == 1 && outcome2 == 1);
+//    }
+//
+//    // Tjekker om terningerne har slået to seksere
+//    public boolean checkIfDoubleSix() {
+//        return (outcome1 == 6 && outcome2 == 6);
+//    }
+//
+//    public boolean checkIfEqual() {
+//        return (outcome1 == outcome2);
+//    }
 
     // Sætter værdien af udfaldende til den ønskede værdi -------------HUSK AT SLETTE
     public void setUdfald(final int die1, final int die2) {
