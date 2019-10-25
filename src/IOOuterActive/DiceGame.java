@@ -9,13 +9,10 @@ public class DiceGame {
    public DiceGame(){
 
        //Contruktion of players
-       // skal den være i main?
+
        player1.setPAccount(1000);
        player2.setPAccount(1000);
 
-       //constuctor
-       // players (containing account)
-       // dice cup (containing dice)
        //player3 = player1;
        boolean turn = true;
        //While win-condition ikke er opfyldt, så kører spillet.
@@ -56,6 +53,11 @@ public class DiceGame {
            }
            else if (turn == false && rollVal != 10){
                turn = true;
+           }
+
+           //5) Her er en tillykkemeddelelse
+           if(player3.getPBalance()>3000){
+               System.out.println("Tillyke "+ pname +" du har vundet :-)");
            }
 
        }
