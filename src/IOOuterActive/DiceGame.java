@@ -24,21 +24,21 @@ public class DiceGame {
       DiceCup diceCup = new DiceCup();
 
       while (p1.getPBalance() <= 3000 && p2.getPBalance() <= 3000) {
-         Player actualPlayer;
+         Player currentPlayer;
 
          if (p1.getTurn()) {
-            actualPlayer = p1;
+            currentPlayer = p1;
          } else {
-            actualPlayer = p2;
+            currentPlayer = p2;
          }
 
          diceCup.throwDice();
          int sum = diceCup.getSum();
 
-         System.out.println(actualPlayer.getPName());
+         System.out.println(currentPlayer.getPName());
          System.out.println("Du har slået: " + sum);
          System.out.println("Du er landet på nummer " + sum + " som er:");
-         actualPlayer.fieldList(sum);
+         currentPlayer.fieldList(sum);
 
          if (sum != 10) {
             switchTurn(p1, p2);
