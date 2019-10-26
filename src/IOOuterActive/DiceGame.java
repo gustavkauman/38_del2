@@ -1,65 +1,69 @@
 package IOOuterActive;
 
 public class DiceGame {
+    //A
 
-   //A
+    //constructor
+    public DiceGame() {
 
-   //constructor
-   public DiceGame() {
+    }
 
-   };
-
-   public void initializeGame(Player p1, Player p2) {
-      p1.setPAccount(1000);
-      p2.setPAccount(1000);
-   }
-
-   private void switchTurn(Player p1, Player p2) {
-      if (p1.getTurn()) {
-         p1.setTurn(false);
-         p2.setTurn(true);
-      } else {
-         p2.setTurn(false);
-         p1.setTurn(true);
-      }
-   }
-
-   public void play(Player p1, Player p2) {
-      DiceCup diceCup = new DiceCup();
-
-      while (p1.getPBalance() < 3000 && p2.getPBalance() < 3000) {
-         Player actualPlayer;
-
-         if (p1.getTurn()) {
-            actualPlayer = p1;
-         } else {
-            actualPlayer = p2;
-         }
-
-         diceCup.throwDice();
-         int sum = diceCup.getSum();
-
-         System.out.println(actualPlayer.getPName());
-         System.out.println("Du har slået: " + sum);
-         System.out.println("Du er landet på nummer " + sum + " som er:");
-         actualPlayer.fieldList(sum);
-
-         if (sum != 10) {
-            switchTurn(p1, p2);
-         }
-      }
-
-      if (p1.getPBalance() >= 3000) {
-         System.out.println("Tillykke " + p1.getPName() + " du har vundet :-)");
-      } else {
-         System.out.println("Tillykke " + p2.getPName() + " du har vundet :-)");
-      }
-   }
+    ;
 
 
+    public void initializeGame(Player p1, Player p2) {
+
+        p1.setPAccount(1000);
+        p2.setPAccount(1000);
+    }
+
+    private void switchTurn(Player p1, Player p2) {
+        if (p1.getTurn()) {
+            p1.setTurn(false);
+            p2.setTurn(true);
+        } else {
+            p2.setTurn(false);
+            p1.setTurn(true);
+        }
+    }
+
+    public void play(Player p1, Player p2) {
+        DiceCup diceCup = new DiceCup();
+        Language language = new Language();
+        while (p1.getPBalance() < 3000 && p2.getPBalance() < 3000) {
+            Player actualPlayer;
+
+            if (p1.getTurn()) {
+                actualPlayer = p1;
+            } else {
+                actualPlayer = p2;
+            }
+
+            diceCup.throwDice();
+            int sum = diceCup.getSum();
+
+            System.out.println(actualPlayer.getPName());
+            language.throwSum();
+            System.out.println(sum);
+            language.landedOn();
+            actualPlayer.fieldList(sum);
+
+            if (sum != 10) {
+                switchTurn(p1, p2);
+            }
+        }
+
+        if (p1.getPBalance() >= 3000) {
+            language.winner();
+            System.out.println(p1.getPName() + " :-)");
+        } else {
+            language.winner();
+            System.out.println(p2.getPName() + " :-)");
+        }
+    }
 
 
-       //Contruktion of players
+    //Contruktion of players
 /*
        player1.setPAccount(1000);
        player2.setPAccount(1000);

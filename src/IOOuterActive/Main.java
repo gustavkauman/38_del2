@@ -7,8 +7,11 @@ public class Main {
 
         Player player1 = new Player();
         Player player2 = new Player();
+//      Language language = new Language();
         Scanner in = new Scanner(System.in);
 
+        // For furture language selection, this code will be uncommented
+//      language.chooseLanguage();
         player1.toStringEnterName();
         player1.setPName(in.nextLine());
         player2.toStringEnterName();
@@ -22,6 +25,7 @@ public class Main {
 
         diceGame.play(player1, player2);
 
+
 //        player1.fieldList(4);
 //        player2.fieldList(2);
 //        player1.fieldList(6);
@@ -30,15 +34,6 @@ public class Main {
 //        player2.fieldList(12);
 //        player1.fieldList(10);
 //        player2.fieldList(9);
-
-
-
-
-
-
-
-
-
 
 
     }
