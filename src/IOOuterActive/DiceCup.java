@@ -7,25 +7,25 @@ public class DiceCup {
     private final Die t2;
     private int outcome1, outcome2;
 
-    // Kontruktør. Laver to terninger.
+    //Contructor. Creates two die objects
     public DiceCup() {
         t1 = new Die();
         t2 = new Die();
     }
 
-    // Metoder. Slår de to terninger, med metoden "roll" fra "Terning"-klassen.
+    //Rolls two die objects with the roll-method form the die-class
     public void throwDice() {
         outcome1 = t1.roll();
         outcome2 = t2.roll();
     }
 
-    //lægger de to facevalues sammen og gemmer dem som sum
+    //Adds the two facevalues and saves the sum
     public int getSum() {
         return outcome1 + outcome2;
     }
 
 
-    // Returnere en tekst med værdien af terningernes rul.
+    //Returns the facevalues of each die
     public String toStringOutcome() {
         return "Terning 1: " + outcome1 + "\n" + "Terning 2: " + outcome2 + "\n";
     }
@@ -50,11 +50,5 @@ public class DiceCup {
 //        return (outcome1 == outcome2);
 //    }
 
-    // Sætter værdien af udfaldende til den ønskede værdi -------------HUSK AT SLETTE
-    public void setUdfald(final int die1, final int die2) {
-
-        outcome1 = die1;
-        outcome2 = die2;
-    }
 
 }
