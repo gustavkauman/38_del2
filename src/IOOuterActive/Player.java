@@ -18,10 +18,6 @@ public class Player {
         this.turn = turn;
     }
 
-    //Skal uddybes?
-    public void playGame(){
-    }
-
     //Sets player's name via input
     public void setPName(String input){
         name = input;
