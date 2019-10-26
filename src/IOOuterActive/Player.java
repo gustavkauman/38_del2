@@ -1,6 +1,7 @@
 package IOOuterActive;
 
 public class Player {
+    Language language = new Language();
 
     //Attributes
     private String name;
