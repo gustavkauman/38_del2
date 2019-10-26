@@ -2,12 +2,8 @@ package IOOuterActive;
 
 public class DiceGame {
 
-   //A
-
    //constructor
-   public DiceGame() {
-
-   };
+   public DiceGame() {};
 
    public void initializeGame(Player p1, Player p2) {
       p1.setPAccount(1000);
@@ -24,10 +20,10 @@ public class DiceGame {
       }
    }
 
-   public void play(Player p1, Player p2) {
+   public void playGame(Player p1, Player p2) {
       DiceCup diceCup = new DiceCup();
 
-      while (p1.getPBalance() < 3000 && p2.getPBalance() < 3000) {
+      while (p1.getPBalance() <= 3000 && p2.getPBalance() <= 3000) {
          Player actualPlayer;
 
          if (p1.getTurn()) {
