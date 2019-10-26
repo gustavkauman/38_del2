@@ -1,15 +1,9 @@
 package IOOuterActive;
 
 public class DiceGame {
-    //A
 
-    //constructor
-    public DiceGame() {
-
-    }
-
-    ;
-
+   //constructor
+   public DiceGame() {};
 
     public void initializeGame(Player p1, Player p2) {
 
@@ -27,26 +21,27 @@ public class DiceGame {
         }
     }
 
-    public void play(Player p1, Player p2) {
-        DiceCup diceCup = new DiceCup();
-        Language language = new Language();
-        while (p1.getPBalance() < 3000 && p2.getPBalance() < 3000) {
-            Player actualPlayer;
+   public void playGame(Player p1, Player p2) {
+      DiceCup diceCup = new DiceCup();
+       Language language = new Language();
+      while (p1.getPBalance() <= 3000 && p2.getPBalance() <= 3000) {
+         Player currentPlayer;
 
-            if (p1.getTurn()) {
-                actualPlayer = p1;
-            } else {
-                actualPlayer = p2;
-            }
+         if (p1.getTurn()) {
+            currentPlayer = p1;
+         } else {
+            currentPlayer = p2;
+         }
 
             diceCup.throwDice();
             int sum = diceCup.getSum();
 
-            System.out.println(actualPlayer.getPName());
-            language.throwSum();
-            System.out.println(sum);
-            language.landedOn();
-            actualPlayer.fieldList(sum);
+         System.out.println(currentPlayer.getPName());
+          language.throwSum();
+         System.out.println(sum);
+          language.landedOn();
+         System.out.println(sum);
+         currentPlayer.fieldList(sum);
 
             if (sum != 10) {
                 switchTurn(p1, p2);
@@ -63,7 +58,7 @@ public class DiceGame {
     }
 
 
-    //Contruktion of players
+       //Contruktion of players
 /*
        player1.setPAccount(1000);
        player2.setPAccount(1000);

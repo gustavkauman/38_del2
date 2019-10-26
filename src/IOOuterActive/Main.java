@@ -23,7 +23,7 @@ public class Main {
         DiceGame diceGame = new DiceGame();
         diceGame.initializeGame(player1, player2);
 
-        diceGame.play(player1, player2);
+        diceGame.playGame(player1, player2);
 
 
 //        player1.fieldList(4);

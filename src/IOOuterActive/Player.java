@@ -6,9 +6,8 @@ public class Player {
     private String name;
     private Account account = new Account();
     private boolean turn;
-    private Language language = new Language();
 
-    public Player() {
+    public Player(){
     }
 
     public boolean getTurn() {
@@ -19,8 +18,9 @@ public class Player {
         this.turn = turn;
     }
 
-    //Skal uddybes?
-    public void playGame() {
+    //Sets player's name via input
+    public void setPName(String input){
+        name = input;
     }
 
     //Returns the players name
@@ -28,10 +28,7 @@ public class Player {
         return name;
     }
 
-    //Sets player's name via input
-    public void setPName(String input) {
-        name = input;
-    }
+
 
     //Prints a message asking the player to enter the desired name
     public void toStringEnterName() {
