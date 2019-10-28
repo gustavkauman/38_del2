@@ -116,7 +116,7 @@ public class Player {
             case 10: {
                 System.out.println("<The Werewall> (Werewallwolf-wall)");
                 System.out.println("Tro det eller ej, en mur lavet af varulve! Du mister en arm og 80 guldklumper, men tag en tur til"); //The Werewall (werewolf-wall  -80,
-                System.out.println(account.subtractMoney(60));                  // men spilleren får en ekstra tur.
+                System.out.println(account.subtractMoney(80));                  // men spilleren får en ekstra tur.
                 System.out.println(account.toStringBalance(account.getMoneySum()) + "\n");
                 break;
             }
