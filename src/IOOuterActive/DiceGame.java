@@ -10,7 +10,7 @@ public class DiceGame {
       p2.setPAccount(1000);
    }
 
-   private void switchTurn(Player p1, Player p2) {
+   public void switchTurn(Player p1, Player p2) {
       if (p1.getTurn()) {
          p1.setTurn(false);
          p2.setTurn(true);
