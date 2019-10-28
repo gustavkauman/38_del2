@@ -7,14 +7,14 @@ import static org.junit.Assert.*;
 public class DieTest {
 
     @Test
-    public void die_can_roll() {
+    public void t01_die_can_roll() {
         Die d = new Die();
         int roll = d.roll();
         assertTrue(roll >= 1 && roll <= 6);
     }
 
     @Test
-    public void die_is_statistically_correct() {
+    public void t02_die_is_statistically_correct() {
         Die d = new Die();
         int[] fallouts = new int[6];
         for (int i = 0; i <= 6000000; i++) {
