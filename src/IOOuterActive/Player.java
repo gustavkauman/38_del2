@@ -29,8 +29,6 @@ public class Player {
         return name;
     }
 
-
-
     //Prints a message asking the player to enter the desired name
     public void toStringEnterName() {
         language.playName();
