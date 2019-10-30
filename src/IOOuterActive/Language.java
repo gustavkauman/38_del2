@@ -2,132 +2,120 @@ package IOOuterActive;
 
 import IOOuterActive.Languages.Danish;
 
-import java.util.Scanner;
-
-public class Language {
-    Danish danish = new Danish();
-    Scanner scan = new Scanner(System.in);
-    String lang= "Danish";
+class Language {
+    private Danish danish = new Danish();
+    private String lang = "Danish";
 
 
-    public Language() {
-
-    }
-
-  /*  public void chooseLanguage() {
-        System.out.println("Vælg sprog:");
-        lang=scan.nextLine();
-    }*/
-
-    public void playName() {
+    void playName() {
         if (lang.equals("Danish")) {
             danish.playName();
         }
     }
 
-    public void tower() {
+    void tower() {
         if (lang.equals("Danish")) {
             danish.tower();
         }
     }
 
-    public void crater() {
+    void crater() {
         if (lang.equals("Danish")) {
             danish.crater();
         }
     }
 
-    public void palaceGates() {
+    void palaceGates() {
         if (lang.equals("Danish")) {
             danish.palaceGates();
         }
     }
 
-    public void coldDesert() {
+    void coldDesert() {
         if (lang.equals("Danish")) {
             danish.coldDesert();
         }
     }
 
-    public void walledCity() {
+    void walledCity() {
         if (lang.equals("Danish")) {
             danish.walledCity();
         }
     }
 
-    public void monastery() {
+    void monastery() {
         if (lang.equals("Danish")) {
             danish.monastery();
         }
     }
 
-    public void blackCave() {
+    void blackCave() {
         if (lang.equals("Danish")) {
             danish.blackCave();
         }
     }
 
-    public void hutsInTheMountain() {
+    void hutsInTheMountain() {
         if (lang.equals("Danish")) {
             danish.hutsInTheMountain();
         }
     }
 
-    public void wereWall() {
+    void wereWall() {
         if (lang.equals("Danish")) {
             danish.wereWall();
         }
     }
 
-    public void thePit() {
+    void thePit() {
         if (lang.equals("Danish")) {
             danish.thePit();
         }
     }
 
-    public void goldmine() {
+    void goldmine() {
         if (lang.equals("Danish")) {
             danish.goldmine();
         }
     }
 
-    public void throwSum() {
+    void throwSum() {
         if (lang.equals("Danish")) {
             danish.throwSum();
         }
     }
 
-    public void landedOn() {
+    void landedOn() {
         if (lang.equals("Danish")) {
             danish.landedOn();
         }
     }
 
-    public void winner() {
+    void winner() {
         if (lang.equals("Danish")) {
             danish.winner();
         }
     }
 
-    public void balanceOut() {
+    void balanceOut() {
         if (lang.equals("Danish")) {
             danish.balanceOut();
         }
     }
 
-    public void moneyWithdrawal() {
+    void moneyWithdrawal() {
         if (lang.equals("Danish")) {
             danish.moneyWithdrawal();
         }
     }
 
-    public void moneyDeposit() {
+    void moneyDeposit() {
         if (lang.equals("Danish")) {
             danish.moneyDeposit();
         }
     }
 
-    public void insufficientFunds() {
+    void insufficientFunds() {
         if (lang.equals("Danish")) {
             danish.insufficientFunds();
         }

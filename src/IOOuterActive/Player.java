@@ -1,6 +1,6 @@
 package IOOuterActive;
 
-public class Player {
+class Player {
     Language language = new Language();
 
     //Attributes
@@ -8,39 +8,39 @@ public class Player {
     private Account account = new Account();
     private boolean turn;
 
-    public Player(){
+    Player() {
     }
 
-    public boolean getTurn() {
+    boolean getTurn() {
         return turn;
     }
 
-    public void setTurn(boolean turn) {
+    void setTurn(boolean turn) {
         this.turn = turn;
     }
 
-    //Sets player's name via input
-    public void setPName(String input){
-        name = input;
-    }
-
     //Returns the players name
-    public String getPName() {
+    String getPName() {
         return name;
     }
 
+    //Sets player's name via input
+    void setPName(String input) {
+        name = input;
+    }
+
     //Prints a message asking the player to enter the desired name
-    public void toStringEnterName() {
+    void toStringEnterName() {
         language.playName();
     }
 
     //Sets players account balance to the value of the input
-    public void setPAccount(int amount) {
+    void setPAccount(int amount) {
         account.setMoney(amount);
     }
 
     //Returns current balance of the players account
-    public int getPBalance() {
+    int getPBalance() {
 
         return account.getMoneySum();
     }
@@ -53,7 +53,7 @@ public class Player {
 
     // Checks the value of the input and decides which field the player has landed on
     // The corresponding amount is either added or withdrawn from the players account
-    public void fieldList(int sum) {
+    void fieldList(int sum) {
 
         switch (sum) {
 

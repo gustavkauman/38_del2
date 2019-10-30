@@ -1,6 +1,6 @@
 package IOOuterActive;
 
-public class DiceCup {
+class DiceCup {
 
     // Attributes
     private final Die t1;
@@ -8,27 +8,27 @@ public class DiceCup {
     private int outcome1, outcome2;
 
     //Contructor. Creates two die objects
-    public DiceCup() {
+    DiceCup() {
         t1 = new Die();
         t2 = new Die();
     }
 
     //Rolls two die objects with the roll-method form the die-class
-    public void throwDice() {
+    void throwDice() {
         outcome1 = t1.roll();
         outcome2 = t2.roll();
     }
 
     //Adds the two facevalues and saves the sum
-    public int getSum() {
+    int getSum() {
         return outcome1 + outcome2;
     }
 
 
     //Returns the facevalues of each die
-    public String toStringOutcome() {
+/*    public String toStringOutcome() {
         return "Terning 1: " + outcome1 + "\n" + "Terning 2: " + outcome2 + "\n";
-    }
+    }*/
 
 /////////////////// Bruges ikke i dette projekt/////////////////////
 //    // Tjekker om der er slået to ens værdier. Returnere boolean.

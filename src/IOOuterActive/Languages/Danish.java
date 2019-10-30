@@ -54,7 +54,7 @@ public class Danish {
     }
 
     public void landedOn() {
-        System.out.println("Du rykker og lander på: ");
+        System.out.print("Du rykker og lander på: ");
     }
 
     public void winner() {
