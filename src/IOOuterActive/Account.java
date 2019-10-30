@@ -1,5 +1,9 @@
 package IOOuterActive;
 
+import IOOuterActive.Languages.Language;
+
+import java.io.FileNotFoundException;
+
 class Account {
 
     private Language language = new Language();
@@ -23,7 +27,7 @@ class Account {
     //Adds the value of the input to the balance and returns a confirmation message
     String addMoney(int money) {
         this.money += money;
-        language.moneyDeposit();
+        language.languageOutput(17);
         return money + "$";
     }
 
@@ -33,18 +37,18 @@ class Account {
 
         if (this.money < money) {
             this.money = 0;
-            language.insufficientFunds();
+            language.languageOutput(18);
             return money + "$";
         } else {
             this.money -= money;
-            language.moneyWithdrawal();
+            language.languageOutput(16);
             return money + "$";
         }
     }
 
     //Returns a string with a message about the account balance
     int toStringBalance(int money) {
-        language.balanceOut();
+        language.languageOutput(15);
         return money;
     }
 

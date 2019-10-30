@@ -1,5 +1,9 @@
 package IOOuterActive;
 
+import IOOuterActive.Languages.Language;
+
+import java.io.FileNotFoundException;
+
 class DiceGame {
 
     //constructor
@@ -39,9 +43,9 @@ class DiceGame {
             int sum = diceCup.getSum();
 
             System.out.println(currentPlayer.getPName());
-            language.throwSum();
+            language.languageOutput(12);
             System.out.println(sum);
-            language.landedOn();
+            language.languageOutput(13);
             System.out.println(sum);
             currentPlayer.fieldList(sum);
 
@@ -51,10 +55,10 @@ class DiceGame {
         }
 
         if (p1.getPBalance() >= 3000) {
-            language.winner();
+            language.languageOutput(14);
             System.out.println(p1.getPName() + " :-)");
         } else {
-            language.winner();
+            language.languageOutput(14);
             System.out.println(p2.getPName() + " :-)");
         }
     }
