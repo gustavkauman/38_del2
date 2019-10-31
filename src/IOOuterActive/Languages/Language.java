@@ -10,15 +10,9 @@ import java.util.Scanner;
 public class Language {
     private static ArrayList<String> output = new ArrayList<>();
 
-    public void readFile() throws FileNotFoundException {
+    public void readFile() throws FileNotFoundException, UnsupportedEncodingException {
         String url = Language.class.getResource("danish.txt").getPath();
-        String configPath = null;
-
-        try {
-            configPath = URLDecoder.decode(url, "UTF-8");
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        }
+        String configPath = URLDecoder.decode(url, "UTF-8");
 
         File file = new File(configPath);
         Scanner read = new Scanner(file);

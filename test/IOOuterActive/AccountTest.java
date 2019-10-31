@@ -5,13 +5,14 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.FileNotFoundException;
+import java.io.UnsupportedEncodingException;
 
 import static org.junit.Assert.*;
 
 public class AccountTest {
 
     @Before
-    public void Before() throws FileNotFoundException {
+    public void Before() throws FileNotFoundException, UnsupportedEncodingException {
         Language language = new Language();
         language.readFile();
     }

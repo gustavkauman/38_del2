@@ -3,10 +3,11 @@ package IOOuterActive;
 import IOOuterActive.Languages.Language;
 
 import java.io.FileNotFoundException;
+import java.io.UnsupportedEncodingException;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
 
         Player player1 = new Player();
         Player player2 = new Player();
