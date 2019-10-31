@@ -25,9 +25,15 @@ public class DiceGameTest {
         Player p2 = new Player();
 
         dg.initializeGame(p1,p2);
-        dg.switchTurn(p1,p2);
+
+        p1.setTurn(true);
+        p2.setTurn(false);
+
         assertTrue(p1.getTurn());
-        dg.switchTurn(p1,p2);
+
+        p1.setTurn(false);
+        p2.setTurn(true);
+
         assertTrue(p2.getTurn());
     }
 }
