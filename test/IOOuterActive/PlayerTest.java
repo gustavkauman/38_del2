@@ -2,6 +2,8 @@ package IOOuterActive;
 
 import org.junit.Test;
 
+import java.io.FileNotFoundException;
+
 import static org.junit.Assert.*;
 
 public class PlayerTest {
@@ -20,7 +22,7 @@ public class PlayerTest {
             if (i != 7) {
                 assertTrue(p.getPBalance() != balanceBefore);
             } else {
-                assertTrue(p.getPBalance() == balanceBefore);
+                assertEquals(p.getPBalance(), balanceBefore);
             }
 
         }
