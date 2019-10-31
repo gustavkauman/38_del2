@@ -1,5 +1,7 @@
 package IOOuterActive;
 
+import IOOuterActive.Languages.Language;
+import org.junit.Before;
 import org.junit.Test;
 
 import java.io.FileNotFoundException;
@@ -7,6 +9,12 @@ import java.io.FileNotFoundException;
 import static org.junit.Assert.*;
 
 public class PlayerTest {
+
+    @Before
+    public void Before() throws FileNotFoundException {
+        Language language = new Language();
+        language.readFile();
+    }
 
     @Test
     public void t05_player_each_field_has_influence_on_players_balance() {

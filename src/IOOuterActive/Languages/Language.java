@@ -2,7 +2,8 @@ package IOOuterActive.Languages;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.net.URL;
+import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -10,8 +11,16 @@ public class Language {
     private static ArrayList<String> output = new ArrayList<>();
 
     public void readFile() throws FileNotFoundException {
-        URL url = Language.class.getResource("danish.txt");
-        File file = new File(url.getPath());
+        String url = Language.class.getResource("danish.txt").getPath();
+        String configPath = null;
+
+        try {
+            configPath = URLDecoder.decode(url, "UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+        File file = new File(configPath);
         Scanner read = new Scanner(file);
         read.useDelimiter("\n");
         while (read.hasNext()) {
