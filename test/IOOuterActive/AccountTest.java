@@ -1,5 +1,7 @@
 package IOOuterActive;
 
+import IOOuterActive.Languages.Language;
+import org.junit.Before;
 import org.junit.Test;
 
 import java.io.FileNotFoundException;
@@ -7,6 +9,12 @@ import java.io.FileNotFoundException;
 import static org.junit.Assert.*;
 
 public class AccountTest {
+
+    @Before
+    public void Before() throws FileNotFoundException {
+        Language language = new Language();
+        language.readFile();
+    }
 
     @Test
     public void account_balance_cannot_be_less_than_zero() {
