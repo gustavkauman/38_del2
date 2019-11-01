@@ -1,10 +1,6 @@
 package IOOuterActive;
 
 class Die {
-    //constructor
-    Die() {
-    }
-
     //generates random value between 1 and 6 and returns that value
     int roll() {
         //Attributer

@@ -1,20 +1,17 @@
 package IOOuterActive.Languages;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.UnsupportedEncodingException;
-import java.net.URLDecoder;
+import IOOuterActive.Main;
+
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Language {
     private static ArrayList<String> output = new ArrayList<>();
 
-    public void readFile() throws FileNotFoundException, UnsupportedEncodingException {
-        String url = Language.class.getResource("danish.txt").getPath();
-        String configPath = URLDecoder.decode(url, "UTF-8");
-        File file = new File(configPath);
-        Scanner read = new Scanner(file);
+    public void readFile() {
+        InputStream in = Main.class.getClassLoader().getResourceAsStream("danish.txt");
+        Scanner read = new Scanner(in);
         read.useDelimiter("\n");
         while (read.hasNext()) output.add(read.next().trim());
     }

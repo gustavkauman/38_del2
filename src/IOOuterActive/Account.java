@@ -6,10 +6,6 @@ class Account {
     private Language language = new Language();
     private int money;
 
-    Account() {
-
-    }
-
     //Returns the current balance of money
     int getMoneySum() {
         return money;

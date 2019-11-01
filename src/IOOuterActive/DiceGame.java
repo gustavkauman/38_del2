@@ -4,10 +4,6 @@ import IOOuterActive.Languages.Language;
 
 class DiceGame {
 
-    //constructor
-    DiceGame() {
-    }
-
     void initializeGame(Player p1, Player p2) {
         p1.setPAccount(1000);
         p2.setPAccount(1000);

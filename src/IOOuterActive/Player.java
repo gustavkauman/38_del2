@@ -10,9 +10,6 @@ class Player {
     private Account account = new Account();
     private boolean turn;
 
-    Player() {
-    }
-
     boolean getTurn() {
         return turn;
     }
