@@ -1,18 +1,16 @@
 package IOOuterActive;
 
-public class Die {
-
-    //Attributer
-    private final int maxval = 6; // max value
-    private int faceValue;       //current value
-
+class Die {
     //constructor
-    public Die() {
+    Die() {
     }
 
     //generates random value between 1 and 6 and returns that value
-    public int roll() {
-        faceValue = (int) (Math.random() * maxval) + 1;
-        return faceValue;
+    int roll() {
+        //Attributer
+        // max value
+        int maxval = 6;
+        //current value
+        return (int) (Math.random() * maxval) + 1;
     }
 }

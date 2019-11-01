@@ -2,13 +2,9 @@ package IOOuterActive;
 
 import IOOuterActive.Languages.Language;
 
-import java.io.FileNotFoundException;
-
 class Account {
-
     private Language language = new Language();
     private int money;
-
 
     Account() {
 

@@ -13,13 +13,10 @@ public class Language {
     public void readFile() throws FileNotFoundException, UnsupportedEncodingException {
         String url = Language.class.getResource("danish.txt").getPath();
         String configPath = URLDecoder.decode(url, "UTF-8");
-
         File file = new File(configPath);
         Scanner read = new Scanner(file);
         read.useDelimiter("\n");
-        while (read.hasNext()) {
-            output.add(read.next().trim());
-        }
+        while (read.hasNext()) output.add(read.next().trim());
     }
 
     public void languageOutput(int n) {

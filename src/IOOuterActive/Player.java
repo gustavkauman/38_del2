@@ -2,8 +2,6 @@ package IOOuterActive;
 
 import IOOuterActive.Languages.Language;
 
-import java.io.FileNotFoundException;
-
 class Player {
     private Language language = new Language();
 
@@ -49,18 +47,10 @@ class Player {
         return account.getMoneySum();
     }
 
-    //Returns a string with a message regarding the current balance of the account
-   /* public String toStringPBalance(){
-
-        return account.toStringBalance(account.getMoneySum());
-    }*/
-
     // Checks the value of the input and decides which field the player has landed on
     // The corresponding amount is either added or withdrawn from the players account
     void fieldList(int sum) {
-
         switch (sum) {
-
             case 2: {
                 System.out.println("<Tower>");
                 language.languageOutput(1);
