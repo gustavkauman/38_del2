@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="38_del2:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/38_del2_jar</output-path>
+    <root id="archive" name="38_del2.jar">
+      <element id="module-output" name="38_del2" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/IOOuterActive/Languages/danish.txt" />
+    </root>
+  </artifact>
+</component>

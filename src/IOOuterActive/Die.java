@@ -14,3 +14,4 @@ class Die {
         return (int) (Math.random() * maxval) + 1;
     }
 }
+
